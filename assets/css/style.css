@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: calc(100% - 56px - 1.5rem);
+}
+
+:root {
+    --topic-main-color: #91D8E4;
+    --topic-title-color: #202020;
+    --topic-text-color: #787878;
+}
+
+.topic-navbar-header {
+    background: var(--topic-main-color);
+}
+
+.topic-navbar-header .navbar-brand {
+    font-weight: bold;
+    color: var(--topic-title-color);
+}
+
+.topic-navbar-header ul a {
+    font: 1rem 'Roboto', sans-serif;
+    color: var(--topic-title-color) !important;
+}
+
+.topic-panel {
+    margin: 0 0 3rem;
+}
+
+.topic-body {
+    margin: 0;
+    border-radius: .35rem;
+}
+
+.topic-main .topic-content {
+    background: var(--topic-main-color);
+}
+
+.topic-table .topic-body {
+    background: var(--white);
+}
+
+.topic-body h2 {
+    font: bold 18px 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+.topic-body h2 a {
+    color: var(--topic-title-color);
+    text-decoration: none;
+}
+
+.topic-body h2 a:hover {
+    text-decoration: underline;
+}
+
+.topic-panel .topic-content {
+    display: flex;
+    box-shadow: 0 20px 60px -5px rgb(51 77 114 / 12%);
+    border-radius: .5rem;
+    margin: .75rem;
+    padding: 1rem;
+}
+
+.topic-heading {
+    width: 45%;
+}
+
+.topic-titles {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--topic-text-color);
+}
+
+.topic-comments {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--topic-text-color);
+}
+
+.topic-title {
+    margin-bottom: 5px;
+    font: bold 1rem 'Roboto', sans-serif;
+    line-height: 1.25rem;
+}
+
+.topic-title a {
+    text-decoration: none;
+    color: var(--topic-title-color);
+}
+
+.topic-title a:hover {
+    text-decoration: underline;
+}
+
+.topic-text {
+    font: 15px 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 0;
+    color: var(--topic-text-color);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.topic-user-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.topic-user-form div {
+    width: 400px;
+}
+
+.alert p {
+    margin-bottom: 0;
+}
+
+/*.topic-user-form .row > .col:last-child {
+    text-align: right;
+}*/
